@@ -1,18 +1,39 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>advisor</title>
-</head>
-<body>
-    <h1>Hello</h1>
-    <ul>
-        <% cities.forEach(function(city) { %>
-          <li><a href="/city/<%= city.name %>"><%= city.name %></a></li>
-        <% }); %>
-      </ul>
-      
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="advisor.css">
+    <title>Advisor</title>
+  </head>
+  <body>
+   
+    <nav>
+      <p class="nav-item"><a href="/dashboard">Dashboard</a></p>
+
+      <p class="nav-item"><a href="/whyTravel">Why Travel?</a></p>
+
+      <p class="nav-item"><a href="/share">Share</a></p>
+
+      <p class="nav-item"><a href="/contact">Contact</a></p>
+
+      <p class="nav-item"><a href="/about">About</a></p>
+
+    </nav>
+
+    <br>
+
+    <div class="city-list">
+      <% for (let i = 0; i < cities.length; i++) { %>
+        <div class="city-card">
+          <a href="/advisor/<%= encodeURIComponent(cities[i].name.toLowerCase()) %>">
+            <%= cities[i].name.toUpperCase() %>
+          </a>
+        </div>
+      <% } %>
+    </div>
+
+  </body>
+
+
 </html>
