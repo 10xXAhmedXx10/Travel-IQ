@@ -9,29 +9,22 @@
   <body>
    
     <nav>
+
       <p class="nav-item"><a href="/dashboard">Dashboard</a></p>
 
       <p class="nav-item"><a href="/whyTravel">Why Travel?</a></p>
 
       <p class="nav-item"><a href="/share">Share</a></p>
 
-      <p class="nav-item"><a href="/contact">Contact</a></p>
+      <p class="nav-item"><a href="/Calculator">Calculator</a></p>
 
-      <p class="nav-item"><a href="/about">About</a></p>
-
-    </nav>
+        <p class="nav-item"><a href="/contact">Contact</a></p>
+  
+        <p class="nav-item"><a href="/about">About</a></p>
+  
+      </nav>
 
     <br>
-
-    <div class="city-list">
-      <% for (let i = 0; i < cities.length; i++) { %>
-        <div class="city-card">
-          <a href="/advisor/<%= encodeURIComponent(cities[i].name.toLowerCase()) %>">
-            <%= cities[i].name.toUpperCase() %>
-          </a>
-        </div>
-      <% } %>
-    </div>
 
   </body>
 

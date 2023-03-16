@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+    <nav>
+
+        <p class="nav-item"><a href="/dashboard">Dashboard</a></p>
+  
+        <p class="nav-item"><a href="/whyTravel">Why Travel?</a></p>
+  
+        <p class="nav-item"><a href="/advisor">Advisor</a></p>
+  
+        <p class="nav-item"><a href="/share">Share</a></p>
+
+          <p class="nav-item"><a href="/contact">Contact</a></p>
+    
+          <p class="nav-item"><a href="/about">About</a></p>
+    
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <h3 class="cal"> Calculate you expenses: </h3>
+              </div>
+
+          </div>
+    
+    <form action="/result" method="post">
+        <label  class="form"  for="num1">Flight:</label>
+        <input  class="lab" type="number" name="num1" id="num1" placeholder="Numbers only">
+
+        <label class="form" for="num2">Hotel:</label>
+        <input class="lab" type="number" name="num2" id="num2" placeholder="Numbers only">
+
+        <label class="form" for="num3">Transportation:</label>
+        <input  class="lab"  type="number" name="num3" id="num3" placeholder=" Numbers only">
+
+        <label class="form" for="num4">Other Expenses:</label>
+        <input  class="lab"  type="number" name="num4" id="num4" placeholder="Numbers only">
+
+        <button class="lab" type="submit" name="submit">Calculate</button>
+    </form>
+</body>
+</html>

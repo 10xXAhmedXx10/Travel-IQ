@@ -23,6 +23,15 @@ body {
     animation: slidein 12s infinite;
 }
 
+
+.description {
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 100px;
+   color: #fff;
+text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+
 @keyframes slidein {
     0% { margin-left: -800px; }
     20% { margin-left: -800px; }

@@ -2,10 +2,10 @@
   "name": "travel-iq",
   "version": "1.0.0",
   "description": "Project-2",
-  "main": "server.js",
+  "main": "travel.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node travel.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/10xXAhmedXx10/Travel-IQ#readme",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "ejs": "^3.1.9",
     "express": "^4.18.2"
   }

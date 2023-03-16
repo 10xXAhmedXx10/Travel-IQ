@@ -1,0 +1,71 @@
+body {
+    text-align: center;
+
+    background-image: url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/woman-calculator-budget-finances_SOMN19162_869247602_is_1560x880.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cal
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #155743 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 40px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    height: 50px;
+    padding: 0 20px;
+  }
+  
+  .nav-item {
+    margin: 0;
+  }
+  
+  .nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .nav-item a:hover {
+    background-color: #555;
+  }
+  
+  .form {
+    font-size: 32px;
+    background-color: rgba(250, 255, 239, 0.384);
+  }
+
+  .lab {
+    font-size: 20px;
+  }

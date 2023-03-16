@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Lobster+Two&family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+    body {
+        background-image: url("https://images.ctfassets.net/itrs3p223g0s/2RbOacx6d1RYNCLOtDmvg/f71f77059110c404db7874ad0d5d6fb6/canadians-travel_1920x1280.jpg"), 
+        
+        url("https://images.unsplash.com/photo-1568323993144-20d546ba585d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom, top;
+       
+       
+      }
+ 
+
+  .text {
+    color: rgb(191, 218, 241);
+    background-color: rgba(0, 0, 0, 0.445);
+        margin-right: 50%;
+        padding: 20px; 
+        font-size: 32px;
+        font-family: 'Kalam', cursive;
+font-family: 'Lobster Two', cursive;
+font-family: 'Roboto Mono', monospace;
+      }
+
+  .copy {
+    font-size: 32px;
+    margin-left:50% ;
+    position: absolute;
+    bottom: 0;
+    font-family: 'Kalam', cursive;
+    color: rgb(229, 231, 236);
+    background-color: #55555569;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    height: 50px;
+    padding: 0 20px;
+  }
+  
+  .nav-item {
+    margin: 0;
+  }
+  
+  .nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .nav-item a:hover {
+    background-color: #555;
+  }
+  
