@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>share</title>
+    <link rel="stylesheet" href="share.css">
+</head>
+<body>
+
+    <nav>
+
+        <p class="nav-item"><a href="/dashboard">Dashboard</a></p>
+  
+        <p class="nav-item"><a href="/whyTravel">Why Travel?</a></p>
+  
+        <p class="nav-item"><a href="/advisor">Advisor</a></p>
+  
+        <p class="nav-item"><a href="/Calculator">Calculator</a></p>
+  
+          <p class="nav-item"><a href="/contact">Contact</a></p>
+    
+          <p class="nav-item"><a href="/about">About</a></p>
+    
+        </nav>
+
+    <h1>Today is <%= dayTIme %> !</h1>
+
+    <form action="/histroy" method="post">
+      <label class="lab" for="yourname">Your Name:</label>
+      <input class="inp" type="text" id="yourname" name="yourname" required>
+    
+      <label class="lab"  for="place">Place:</label>
+      <input class="inp"  type="text" id="place" name="place" required>
+    
+      <label class="lab"  for="date">Date:</label>
+      <input class="inp" input type="number" id="year" name="year" required>
+    
+      <label class="lab"  for="img">Image URL:</label>
+      <input class="inp"  type="text" id="img" name="img" required>
+      
+      <label class="lab" for="Description">Description/comment:</label>
+      <input class="inp" type="text" id="Description" name="Description" required>
+
+      <label for="description">:</label>
+    
+      <button class="sub" type="submit">Submit</button>
+    </form>
+    
+    
+
+</body>
+</html>

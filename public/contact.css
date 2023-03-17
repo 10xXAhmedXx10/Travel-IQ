@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Lobster+Two&family=Raleway:ital,wght@1,200&family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+body {
+    text-align: center;
+    font-family: 'Kalam', cursive;
+font-family: 'Lobster Two', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Mono', monospace;
+background-color:rgb(255, 255, 255);
+
+}
+
+img {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    height: 50px;
+    padding: 0 20px;
+  }
+  
+  .nav-item {
+    margin: 0;
+  }
+  
+  .nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .nav-item a:hover {
+    background-color: #555;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .container p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .email-link {
+    display: block;
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .email-link:hover {
+    text-decoration: underline;
+  }
+  
+  .profile-link {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #666;
+  }
+  
+  .profile-link:hover {
+    text-decoration: underline;
+    color: #333;
+  }
+  

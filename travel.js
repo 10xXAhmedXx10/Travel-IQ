@@ -1,14 +1,18 @@
 const express = require("express");
 
+const app = express();
+
+app.set("view engine", "ejs")
+
 const bodyParser = require("body-parser")
 
-const app = express();
+app.use(express.static("public"))
 
 app.use(bodyParser.urlencoded({extended: true}))
 
-const PORT = process.env.PORT || 3000
+let submissions = [];
 
-app.use(express.static("public"))
+const PORT = process.env.PORT || 3000
 
 app.get("/", function(req, res) {
     res.redirect("/dashboard");
@@ -48,7 +52,67 @@ app.get("/about", function(req, res){
   res.render("about.ejs")
 })
 
+app.get("/contact", function(req, res){
+  res.render("contact.ejs")
+})
+
+app.get("/share", function(req, res){
+
+  const today = new Date();
+
+  let time = {
+    weekday: "long",
+    day: "numeric",
+    month: "long"
+  };
+      
+  let day = today.toLocaleDateString("en-US", time)
+
+  res.render("share.ejs", {dayTIme: day})
+
+});
+
+
+
+app.post('/histroy', function(req, res) {
+  const yourname = req.body.yourname;
+  const place = req.body.place;
+  const year = req.body.year;
+  const img = req.body.img;
+  const description = req.body.Description
+
+  const submission = {
+    yourname: yourname,
+    place: place,
+    year: year,
+    img: img,
+    description:description
+  };
+
+  submissions.push(submission);
+
+  res.render('histroy.ejs', { submissions: submissions });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 app.listen(PORT, function(req, res){
     console.log(`listening on port ${PORT}`)
-})
+});
+

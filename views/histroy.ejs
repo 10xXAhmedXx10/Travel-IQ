@@ -1,0 +1,47 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>histroy</title>
+  <link rel="stylesheet" href="histroy.css">
+</head>
+
+<body>
+
+  <nav>
+
+    <p class="nav-item"><a href="/dashboard">Dashboard</a></p>
+
+    <p class="nav-item"><a href="/whyTravel">Why Travel?</a></p>
+
+    <p class="nav-item"><a href="/advisor">Advisor</a></p>
+
+    <p class="nav-item"><a href="/share">Share</a></p>
+
+    <p class="nav-item"><a href="/Calculator">Calculator</a></p>
+
+      <p class="nav-item"><a href="/contact">Contact</a></p>
+
+      <p class="nav-item"><a href="/about">About</a></p>
+
+    </nav>
+    
+  <h1>Fun page</h1>
+
+  <div class="container">
+    <% for (let i = 0; i < submissions.length; i++) { %>
+      <div class="card">
+        <div class="card-image">
+          <img src="<%= submissions[i].img %>" alt="Submitted Image">
+        </div>
+        <div class="card-content">
+          <p>Your Name: <%= submissions[i].yourname %></p>
+          <p>Place: <%= submissions[i].place %></p>
+          <p>year: <%= submissions[i].year %></p>
+          <p>description: <%= submissions[i].description %></p>
+        </div>
+      </div>
+    <% } %>
+  </div>
+</body>
+
