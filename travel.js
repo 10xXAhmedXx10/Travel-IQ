@@ -2,15 +2,15 @@ const express = require("express");
 
 const app = express();
 
-app.set("view engine", "ejs")
+app.set("view engine", "ejs") //to  render the ejs files
 
 const bodyParser = require("body-parser")
 
-app.use(express.static("public"))
+app.use(express.static("public")) //creat the css files
 
 app.use(bodyParser.urlencoded({extended: true}))
 
-let submissions = [];
+let submissions = []; //this is array  for the share/post method
 
 const PORT = process.env.PORT || 3000
 
@@ -75,14 +75,14 @@ app.get("/share", function(req, res){
 
 
 app.post('/histroy', function(req, res) {
-  const yourname = req.body.yourname;
+  const name = req.body.name;
   const place = req.body.place;
   const year = req.body.year;
   const img = req.body.img;
   const description = req.body.Description
 
   const submission = {
-    yourname: yourname,
+    name: name,
     place: place,
     year: year,
     img: img,

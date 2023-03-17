@@ -1,5 +1,5 @@
 body {
-background-color: rgb(25, 45, 65);
+  background: linear-gradient(to bottom, #9bc400, #8076a3, #f9c5bd, #7c677f);
 }
 
 .container {

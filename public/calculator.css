@@ -63,7 +63,8 @@ nav {
   
   .form {
     font-size: 32px;
-    background-color: rgba(250, 255, 239, 0.384);
+    text-shadow: 1px 1px 1px #000, 
+               3px 3px 5px rgb(238, 67, 67); 
   }
 
   .lab {

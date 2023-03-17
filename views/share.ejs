@@ -22,32 +22,33 @@
           <p class="nav-item"><a href="/contact">Contact</a></p>
     
           <p class="nav-item"><a href="/about">About</a></p>
+
+          <p class="nav-item"><a href="/history">history</a></p>
     
         </nav>
 
-    <h1>Today is <%= dayTIme %> !</h1>
+    <p class="title">Today is <%= dayTIme %> !</p>
 
+    <ul>
     <form action="/histroy" method="post">
-      <label class="lab" for="yourname">Your Name:</label>
-      <input class="inp" type="text" id="yourname" name="yourname" required>
-    
+      <label class="lab" for="name">Name:</label>
+      <li><input class="inp" type="text" id="name" name="name" placeholder="Text only" required>
+      </li>
       <label class="lab"  for="place">Place:</label>
-      <input class="inp"  type="text" id="place" name="place" required>
-    
+    <li><input class="inp"  type="text" id="place" name="place" placeholder="Text only" required>
+    </li>
       <label class="lab"  for="date">Date:</label>
-      <input class="inp" input type="number" id="year" name="year" required>
-    
+    <li><input class="inp" input type="number" id="year" name="year" placeholder="Numbers only" required>
+    </li>
       <label class="lab"  for="img">Image URL:</label>
-      <input class="inp"  type="text" id="img" name="img" required>
-      
-      <label class="lab" for="Description">Description/comment:</label>
-      <input class="inp" type="text" id="Description" name="Description" required>
+    <li><input class="inp"  type="text" id="img" name="img" placeholder="URL only" required>
+    </li> 
+      <label class="lab" for="Description">Description/comments:</label>
+    <li><input class="inp" type="text" id="Description" name="Description" placeholder="Text only" required></li>
 
-      <label for="description">:</label>
-    
-      <button class="sub" type="submit">Submit</button>
+      <button class="sub" type="submit">Post</button>
     </form>
-    
+  </ul>
     
 
 </body>

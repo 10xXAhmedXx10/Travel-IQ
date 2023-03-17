@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+  text-align: center;
+  background-image: url(https://images.unsplash.com/photo-1585453595056-2f601d1deb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c3VuJTIwaW4lMjBoYW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.title {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgba(31, 207, 219, 0.459);
+  padding: 10px;
+  display: inline-block;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -23,13 +43,48 @@ nav {
   }
 
   .lab {
-    font-size: 23px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 1px 1px 1px #000, 
+     3px 3px 5px rgb(221, 69, 69); 
+    font-weight: bold;
+     margin-bottom: 10px;
   }
 
   .inp {
     font-size: 23px;
+    border: 1px solid rgb(247, 0, 0);
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  width: 400px;
   }
 
   .sub {
-    font-size: 23px;
+    padding: 10px 20px;
+    background-color: #9d7cf8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
+  
+  .sub:hover {
+    background-color: #d8371b;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #8585855e;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
