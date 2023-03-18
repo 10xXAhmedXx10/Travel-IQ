@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Travel History</title>
+    <link rel="stylesheet" href="/editHistory.css">
+  </head>
+  <body>
+    <nav>
+      <p class="nav-item"><a href="/dashboard">Dashboard</a></p>
+      <p class="nav-item"><a href="/whyTravel">Why Travel?</a></p>
+      <p class="nav-item"><a href="/advisor">Advisor</a></p>
+      <p class="nav-item"><a href="/share">Share</a></p>
+      <p class="nav-item"><a href="/Calculator">Calculator</a></p>
+      <p class="nav-item"><a href="/history">history</a></p>
+      <p class="nav-item"><a href="/contact">Contact</a></p>
+      <p class="nav-item"><a href="/about">About</a></p>
+    </nav>
+
+    <h1>Edit your post</h1>
+
+    <div class="form">
+      <form action="/history/<%= travelInfo._id %>/edit" method="POST">
+        <label class="lab" for="name">Name</label>
+        <input class="inp" type="text" name="name" value="<%= travelInfo.name %>">
+    
+        <label class="lab"  for="place">Place</label>
+        <input class="inp" type="text" name="place" value="<%= travelInfo.place %>">
+    
+        <label class="lab"  for="year">Year</label>
+        <input class="inp" type="text" name="year" value="<%= travelInfo.year %>">
+    
+        <label class="lab"  for="img">Image URL</label>
+        <input class="inp" type="text" name="img" value="<%= travelInfo.img %>">
+    
+        <label class="lab"  for="description">Description</label>
+        <textarea  class="inp" name="description"><%= travelInfo.description %></textarea>
+    
+        <button class="save" type="submit">Save</button>
+      </form>
+    </div>
+    
+  </body>
+</html>

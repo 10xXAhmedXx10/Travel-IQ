@@ -1,47 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>histroy</title>
-  <link rel="stylesheet" href="histroy.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>history</title>
+    <link rel="stylesheet" href="/histroy.css">
 </head>
-
 <body>
-
-  <nav>
-
-    <p class="nav-item"><a href="/dashboard">Dashboard</a></p>
-
-    <p class="nav-item"><a href="/whyTravel">Why Travel?</a></p>
-
-    <p class="nav-item"><a href="/advisor">Advisor</a></p>
-
-    <p class="nav-item"><a href="/share">Share</a></p>
-
-    <p class="nav-item"><a href="/Calculator">Calculator</a></p>
-
-      <p class="nav-item"><a href="/contact">Contact</a></p>
-
-      <p class="nav-item"><a href="/about">About</a></p>
-
+    <nav>
+        <p class="nav-item"><a href="/dashboard">Dashboard</a></p>
+        <p class="nav-item"><a href="/whyTravel">Why Travel?</a></p>
+        <p class="nav-item"><a href="/advisor">Advisor</a></p>
+        <p class="nav-item"><a href="/share">Share</a></p>
+        <p class="nav-item"><a href="/Calculator">Calculator</a></p>
+        <p class="nav-item"><a href="/contact">Contact</a></p>
+        <p class="nav-item"><a href="/about">About</a></p>
+       
     </nav>
-    
-  <h1>Fun page</h1>
 
-  <div class="container">
-    <% for (let i = 0; i < submissions.length; i++) { %>
-      <div class="card">
-        <div class="card-image">
-          <img src="<%= submissions[i].img %>" alt="Submitted Image">
-        </div>
-        <div class="card-content">
-          <p>Name: <%= submissions[i].name %></p>
-          <p>Place: <%= submissions[i].place %></p>
-          <p>year: <%= submissions[i].year %></p>
-          <p>description: <%= submissions[i].description %></p>
-        </div>
-      </div>
-    <% } %>
-  </div>
+    <h1>Fun Page</h1>
+    <ul class="card-list">
+        <% travelInfo.forEach(function(info) { %>
+          <li>
+            <div class="card">
+              <div class="card-image">
+                <img src="<%= info.img %>" alt="Image">
+              </div>
+              <div class="card-content">
+                <p><%= info.name %></p>
+                <p><strong>Place:</strong> <%= info.place %></p>
+                <p><strong>Date:</strong> <%= info.year %></p>
+                <p><strong>Description:</strong> <%= info.description %></p>
+                <form method="GET" action="/edit/<%= info._id %>">
+                  <button class="edit" type="submit">Edit</button>
+                </form>
+
+                <form class="delete" method="delete" action="/delete/<%= info._id %>">
+                  <button class="delete" type="submit">Delete</button>
+                </form>
+                
+              </div>
+            </div>
+          </li>
+        <% }); %>
+      </ul>
+      
 </body>
-
+</html>

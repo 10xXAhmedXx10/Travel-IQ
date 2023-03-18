@@ -26,6 +26,19 @@
 
     <br>
 
+
+    <ul>
+      <% for (var i = 0; i < cities.length; i++) { %>
+        <li>
+          <div class="city-box">
+          <p class="city-name"> <%= cities[i].name %></p>
+          <img class="city-image" src="<%= cities[i].img %>" alt="<%= cities[i].name %>">
+          <p class="city-description" ><%= cities[i].description %></p>
+        </li>
+      <% } %>
+    </ul>
+    
+
   </body>
 
 

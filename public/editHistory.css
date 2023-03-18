@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Lobster&display=swap');
+
+body {
+  text-align: center;
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    height: 50px;
+    padding: 0 20px;
+  }
+  
+  .nav-item {
+    margin: 0;
+  }
+  
+  .nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .nav-item a:hover {
+    background-color: #555;
+  }
+
+  .lab {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 1px 1px 1px #000, 
+     3px 3px 5px rgb(221, 69, 69); 
+    font-weight: bold;
+     margin-bottom: 10px;
+  }
+
+  .inp {
+    font-size: 23px;
+    border: 1px solid rgb(206, 38, 221);
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  }
+
+
+  .sub:hover {
+    background-color: #f054e8;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #2f00555e;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  h1 {
+    color: rgb(255, 249, 249);
+    background-color: rgba(0, 0, 0, 0.342);
+    margin: 10px;
+    display: inline-block;
+    padding: 5px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Lobster', cursive;
+  }
+
+  .save {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+  }

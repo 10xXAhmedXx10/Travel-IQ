@@ -30,25 +30,26 @@
     <p class="title">Today is <%= dayTIme %> !</p>
 
     <ul>
-    <form action="/histroy" method="post">
-      <label class="lab" for="name">Name:</label>
-      <li><input class="inp" type="text" id="name" name="name" placeholder="Text only" required>
+      <form action="/history" method="post">
+        <label class="lab" for="name">Name:</label>
+        <li><input class="inp" type="text" id="name" name="name" placeholder="Text only" required>
+        </li>
+        <label class="lab"  for="place">Place:</label>
+      <li><input class="inp"  type="text" id="place" name="place" placeholder="Text only" required>
       </li>
-      <label class="lab"  for="place">Place:</label>
-    <li><input class="inp"  type="text" id="place" name="place" placeholder="Text only" required>
-    </li>
-      <label class="lab"  for="date">Date:</label>
-    <li><input class="inp" input type="number" id="year" name="year" placeholder="Numbers only" required>
-    </li>
-      <label class="lab"  for="img">Image URL:</label>
-    <li><input class="inp"  type="text" id="img" name="img" placeholder="URL only" required>
-    </li> 
-      <label class="lab" for="Description">Description/comments:</label>
-    <li><input class="inp" type="text" id="Description" name="Description" placeholder="Text only" required></li>
-
-      <button class="sub" type="submit">Post</button>
-    </form>
-  </ul>
+        <label class="lab"  for="year">Date:</label>
+      <li><input class="inp" input type="number" id="year" name="year" placeholder="Numbers only" required>
+      </li>
+        <label class="lab"  for="img">Image URL:</label>
+      <li><input class="inp"  type="text" id="img" name="img" placeholder="URL only" required>
+      </li> 
+        <label class="lab" for="description">Description/comments:</label>
+      <li><input class="inp" type="text" id="description" name="description" placeholder="Text only" required></li>
+      
+        <button class="sub" type="submit">Post</button>
+      </form>
+      </ul>
+      
     
 
 </body>
